@@ -79,6 +79,9 @@ footer{
     color: white;
     padding: 30px;
     padding-right: 30px;
+   a {
+ color:white;
+    }
 }
 #p1{
     
@@ -214,23 +217,30 @@ footer{
     }
 }
 @media (max-width: 2560px) {
-    /* Adjustments for very large screens, often minimal changes from global unless specific layout needed */
     body {
         font-size: 16px;
     }
     #flex1 {
         padding-right: 40px;
-        width: 100%; /* Ensure it spans full width */
+        width: 97.5%; 
     }
     #welcomeDiv p { font-size: 20px; }
     #welcomeDiv h3 { font-size: 30px; }
     #heading2Div { padding-left: 40px; }
     #image { width: 85%; height: auto; }
-    #hero-section { flex-direction: row; padding: 25px; }
-    section { flex-direction: row; flex-wrap: wrap; justify-content: space-around; width: auto; height: 250px; padding-left: 25px; gap: 40px;}
+    #hero-section { flex-direction:row; 
+         padding: 25px; }
+
+    section { flex-direction: row;
+         flex-wrap: wrap; 
+         justify-content: space-around;
+          width: auto; 
+          height: 250px;
+           padding-left: 25px;
+            gap: 40px;}
     section h3 { font-size: 28px; }
     section li { font-size: 22px; }
-    footer { width: 100%; padding: 40px; }
+    footer { width: 97%; padding: 40px; }
     #foot { padding-top: 50px; padding-right: 30px; }
 }
 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contactStyle.css" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <h1 id="heading">Let's Get In Touch</h1>
+
+  
+   <div id="bigDiv">
+    <form action="thankyou.html" method="get">
+      <label>
+        <div>
+        <img id="personImg" src="assets/person.png" alt="person"/> Name:
+        </div>
+        <input type="text" name="name" required>
+      </label><br><br>
+      <label>
+        <div>
+        <img id="personImg" src="assets/person.png" alt="person"/> Surname:
+        </div>
+        <input type="text" name="surname" required>
+      </label><br><br>
+      <label>
+        <div>
+       <img id="email2Img" src="assets/email.jpg" alt="email"/> Email:
+       </div>
+        <input type="email" name="email" required>
+      </label><br><br>
+
+      <label>
+        <div>
+        <img id="phone2Img" src="assets/call.webp" alt="call"/> Phone Number:
+        </div>
+        <input type="tel" name="phone">
+      </label><br><br>
+
+      <label for="query-type">
+        <div>
+        <img id="questionImg" src="assets/query.jpg" alt="query"/> Select your query type:
+        </div>
+    </label>
+      <select id="query-type" name="query-type" required>
+        <option value="" disabled selected>-- Choose an option --</option>
+        <option value="general">💬 General Question</option>
+        <option value="feedback">🗣️ Feedback</option>
+        <option value="bug">🐞 Bug Report</option>
+        <option value="info-request">📄 Request for Information</option>
+        <option value="tech-support">🛠️ Technical Support</option>
+        <option value="other">🔍 Other</option>
+      </select><br><br>
+
+      <label>
+        📝 Query Message:
+        <textarea name="feedback" required></textarea>
+      </label><br><br>
+
+      <button type="submit">🚀 Submit</button>
+    </form>
+    
+    <div id="flex1">
+      <div id="phoneDiv">
+        <img id="phoneImg" src="assets/call.webp" alt="phone" />
+      
+        <p>Call Us<br>+123 45 789 000</p>
+      </div>
+      <div id="emailDiv">
+        <img id="emailImg" src="assets/email.jpg" alt="email" />
+        
+        <p>Email Us<br>musiki@gmail.com</p>
+      </div>
+      <div id="locationDiv">
+        <img id="locationImg" src="assets/location.png" alt="location" />
+        <p>Address <br> 221b Elementary Street<br>Cape Town</p>
+       
+      </div>
+        </div>
+        </div>
+  </body>
+</html>

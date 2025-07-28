@@ -1,0 +1,126 @@
+
+body{
+    background-image: url('assets/ai-generated-8540915_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#phoneImg{
+     width: 10%;
+    height: 30%;
+    padding-top: 20px;
+    
+}
+#locationImg{
+      width: 10%;
+    height: 30%;
+    padding-top: 20px;
+}
+
+#emailImg{
+    
+   width: 10%;
+    height: 30%;
+    padding-top: 20px;
+}
+#flex1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding-left: 90px;
+    padding-top: 20px;
+  
+  
+}
+#heading{
+    padding-left: 640px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#phoneDiv,#emailDiv,#locationDiv{
+    width: 300px;
+    border-radius: 10px;
+    padding-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     background-color: rgb(247, 247, 247);
+    border-radius: 20px;box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+   height: 100px;
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+
+}
+
+#phoneDiv:hover,
+#emailDiv:hover,
+#locationDiv:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+hr{
+    width: 50%;
+}
+h2{
+    padding-left: 640px;
+}
+form {
+  max-width: 400px;
+  padding-left: 640px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+input,select{
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #b9b6b6;
+  border-radius: 4px;
+  width: 100%;
+}
+textarea{
+    height: 100px;
+    margin-top: 5px;
+  border: 1px solid #b9b6b6;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #000000;
+  border-radius: 4px;
+  color: white;
+}
+#questionImg{
+width:4%;
+}
+
+#personImg{
+    width: 3%;
+}
+#email2Img{
+    width: 3.5%;
+}
+#phone2Img{
+    width: 3%;
+}
+#h1ThankyouPage{
+    text-align: center;
+}
+#dpiaImg{
+width: 20%;
+height: 20;
+}
+#bigDiv{
+    display: flex;
+    gap: 70px;
+}
