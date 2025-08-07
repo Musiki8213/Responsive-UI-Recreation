@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="converter.css" />
+    <title>Converter Hub</title>
+  </head>
+
+  <body>
+    <h1>Converter Hub</h1>
+    <div id="buttonDiv">
+      <button id="FileTransferBtn" onclick="fileShow()">File Transfer</button>
+      <button id="TempetatureBtn" onclick="tempShow()">Temperature</button>
+      <button id="ScientificBtn" onclick="scienShow()">Scientific</button>
+      <button id="MetricBtn" onclick="metricShow()">Metric</button>
+    </div>
+    <!-- File Transfer Section -->
+    <div id="fileTransDiv">
+      <h2>File Transfer Calculator</h2>
+      <label>File Size</label><br />
+      <input type="number" id="sizeCounter" value="0" min="0" step="1" />
+      <select id="sizeBits">
+        <option value="megabytes">Megabytes (MB)</option>
+        <option value="gigabytes">Gigabytes (GB)</option>
+        <option value="kilobytes">Kilobytes (KB)</option>
+      </select>
+
+      <br /><br /><br />
+      <label>Internet Speed</label><br />
+      <input type="number" id="speedCounter" value="0" min="0" step="1" />
+      <select id="speedBits">
+        <option value="megabits">Megabits/sec (Mbps)</option>
+        <option value="gigabits">Gigabits/sec (Gbps)</option>
+        <option value="kilobits">Kilobits/sec (Kbps)</option>
+      </select>
+
+      <br /><br /><br />
+      <label>Output</label><br />
+      <input type="text" id="fileResults" readonly />
+      <br /><br />
+      <br /><br /><br />
+      <button id="fileConvertBtn">Calculate</button>
+    </div>
+
+    <!-- Temperature Converter -->
+    <div id="tempDiv">
+      <h2>Temperature Converter</h2>
+      <label>Value to Convert</label><br />
+      <input type="text" id="convertNumber" />
+      <br /><br /><br />
+      <label>From</label><br />
+      <select id="degree">
+        <option value="celsius">Celsius (°C)</option>
+        <option value="fahrenheit">Fahrenheit (°F)</option>
+      </select>
+      <br /><br /><br />
+      <label>Output</label><br />
+      <input type="text" id="degreeResult" readonly />
+      <br /><br /><br />
+      <button id="tempConvertBtn">Convert</button>
+    </div>
+
+    <!-- Scientific Notation Converter -->
+    <div id="scientDiv">
+      <h2>Scientific Notation Converter</h2>
+      <label>Standard Number</label><br />
+      <input type="number" id="standardNumber" value="0" min="0" step="1" />
+      <br /><br /><br />
+      <label>Output</label><br />
+      <input type="text" id="scientificOutput" readonly />
+      <br /><br /><br />
+      <button id="scientificConvertBtn">Convert</button>
+    </div>
+
+    <!-- Metric Prefix Converter -->
+    <div id="metricDiv">
+      <h2>Metric Prefix Converter</h2>
+      <label>Enter Value</label><br />
+      <input type="text" id="valueNumber" />
+      <br /><br />
+      <div id="metricValuesFlex">
+        <div>
+          <label>From</label><br />
+          <select id="metricFromValues">
+            <option value="giga">Giga (G)</option>
+            <option value="mega">Mega (M)</option>
+            <option value="kilo">Kilo (k)</option>
+            <option value="base unit">Base Unit</option>
+            <option value="milli">Milli (m)</option>
+            <option value="micro">Micro (µ)</option>
+          </select>
+        </div>
+        <div>
+          <label>To</label><br />
+          <select id="metricToValues">
+            <option value="giga">Giga (G)</option>
+            <option value="mega">Mega (M)</option>
+            <option value="kilo">Kilo (k)</option>
+            <option value="base unit">Base Unit</option>
+            <option value="milli">Milli (m)</option>
+            <option value="micro">Micro (µ)</option>
+          </select>
+        </div>
+      </div>
+      <br /><br /><br />
+      <label>Output</label><br />
+      <input type="text" id="metricResult" readonly />
+      <br /><br />
+      <button id="metricConvertBtn">Convert</button>
+    </div>
+
+    <script src="converter.js"></script>
+  </body>
+</html>
