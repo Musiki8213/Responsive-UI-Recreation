@@ -14,15 +14,17 @@
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#projects">Projects</a></li>
+      <li><a href="converter.html">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Heading Section -->
- <div id="heading">
-  <h1>Sithomola Musiki</h1>
+ <div id="headingDiv">
+  <div id="topDiv">
+    <h1>Built <span>It</span>. Branded <span>It</span>. Bragging About <span>It</span>.</h1>
+
   <p id="p1">
     Passionate about crafting seamless digital experiences,<br>
     I blend creativity with code to build solutions that stand out.<br>
@@ -30,7 +32,16 @@
     I turn ideas into impactful projects.<br>
     Welcome to my portfolio — where technology meets artistry.
   </p>
-  <p id="p2">Built <span>It</span> Branded <span>It</span>. Bragging About <span>It</span>.</p>
+</div>
+<div id="techStackDiv">
+  <!--<img id="stackImg" src="assets/techStack.png" alt="Tech Stack">-->
+
+</div>
+
+ 
+   <svg class="wave-border" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#f3f4f5" fill-opacity="1" d="M0,256L26.7,229.3C53.3,203,107,149,160,149.3C213.3,149,267,203,320,229.3C373.3,256,427,256,480,266.7C533.3,277,587,299,640,282.7C693.3,267,747,213,800,186.7C853.3,160,907,160,960,176C1013.3,192,1067,224,1120,250.7C1173.3,277,1227,299,1280,293.3C1333.3,288,1387,256,1413,240L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+  </svg>
 </div>
 
  
@@ -40,24 +51,26 @@
     <div class="about-text">
       
     <h2>About Me</h2>
-      <p>
-        Hello! I'm <strong>Sithomola Musiki</strong>, a passionate and ambitious web developer from South Africa, currently a Software Developer Trainee at <strong>mLab</strong>. I specialize in building modern, responsive, and user-friendly websites and applications using HTML, CSS, JavaScript, and React.
-      </p>
-      <p>
-        I’m a proud recipient of the <strong>Best Achiever Award (2023)</strong> at <strong>Tshwane University of Technology</strong>, where I was recognized for outstanding academic and project performance. This award strengthened my belief in continuous learning, hard work, and staying curious.
-      </p>
-      <p>
-        At mLab, I'm involved in hands-on development projects where I'm learning to apply agile methodologies, collaborate with other developers, and contribute to real-world solutions. My training covers both frontend and backend development, giving me a balanced full-stack foundation.
-      </p>
-      <p>
-        I'm highly motivated, love solving problems through code, and enjoy transforming complex ideas into functional, elegant interfaces. I’m also passionate about learning from others, sharing knowledge, and staying up to date with new technologies.
-      </p>
+<p>
+  Hello! I'm <strong>Sithomola Musiki</strong>, a passionate and ambitious web developer from South Africa with a love for creating digital experiences that feel effortless and engaging. My journey into coding began with a curiosity about how things work on the web, and over time, it grew into a deep commitment to designing and building solutions that make a difference.
+</p>
+<p>
+  I specialize in crafting modern, responsive, and user-friendly websites and applications using HTML, CSS, JavaScript, and React. For me, web development is more than just writing code — it’s about understanding the needs of people and translating those into clean, functional, and visually appealing interfaces.
+</p>
+<p>
+  Outside of coding, I’m constantly exploring new ideas, experimenting with creative projects, and finding inspiration from technology, design, and everyday life. I enjoy problem-solving, whether it’s untangling a tricky bug or figuring out the most elegant way to bring a concept to life.
+</p>
+<p>
+  I believe in continuous growth, collaboration, and staying curious. My goal is to keep learning, improving my craft, and contributing to projects that inspire and challenge me while making a positive impact.
+</p>
+
     </div>
     <div id="computerDiv">
     <img id="computerImg" src="assets/PINK.png" alt="Computer">
     </div>
   </section>
 
+    
   <!-- Achievements -->
   <section id="achievements">
     <h2>Achievements</h2>
@@ -69,42 +82,23 @@
     </ul>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Currency Converter</h3>
-        <p>This interactive web app converts currencies in real time using exchange rate APIs. Built with HTML, CSS, and vanilla JavaScript.</p>
-        <a href="converter.html">View Project →</a>
-      </div>
-      <div class="project-card">
-        <h3>Responsive Portfolio Website</h3>
-        <p>A personal portfolio showcasing my work, skills, and contact information. Designed to work on all devices and screen sizes.</p>
-      </div>
-      <div class="project-card">
-        <h3>Simple Quiz App</h3>
-        <p>A quiz application with a timer and score tracker built using JavaScript and DOM manipulation.</p>
-      </div>
-    </div>
-  </section>
 
   <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5 & Semantic Markup</li>
-      <li>CSS3 & Responsive Design</li>
-      <li>JavaScript (ES6+)</li>
-      <li>React (Basic)</li>
-      <li>Git & GitHub</li>
-      <li>Node.js (Beginner)</li>
-      <li>API Integration</li>
-      <li>Agile Development</li>
-      <li>Figma to HTML</li>
-      <li>Team Collaboration Tools (Trello, Slack)</li>
-    </ul>
-  </section>
+ <section id="skills">
+  <h2>Skills</h2>
+  
+  <ul class="skills-list">
+    <li><img id="skillImg" src="assets/html.png" alt="HTML"> HTML</li>
+    <li><img id="skillImg" src="assets/css.png" alt="CSS"> CSS & Responsive Design</li>
+    <li><img id="skillImg" src="assets/javascript.png" alt="JavaScript"> JavaScript</li>
+    <li><img id="skillImg"src="assets/github.png" alt="GitHub"> GitHub</li>
+    <li><img id="skillImg" src="assets/typescript.png" alt="TypeScript"> TypeScript</li>
+    <li><img id="skillImg" src="assets/java.png" alt="Java"> Java</li>
+    <li><img id="skillImg" src="assets/python.png" alt="Python"> Python</li>
+    <li><img id="skillImg" src="assets/sql.png" alt="SQL"> SQL</li>
+    <li><img id="skillImg" src="assets/react.png" alt="React"> React</li>
+  </ul>
+</section>
 
   <!-- Contact -->
   <section id="contact" class="contact">
