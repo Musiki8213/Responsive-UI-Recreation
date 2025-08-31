@@ -13,9 +13,9 @@ This repository contains my front-end and web development projects, showcasing m
 ---
 
 ## 📫 Contact
-- GitHub: [YourUsername](https://github.com/YourUsername)  
-- Email: yourname@email.com  
-- LinkedIn: [YourLinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub: (https://github.com/Musiki8213)  
+- Email: sithomolamusiki@gmail.com  
+- LinkedIn: (www.linkedin.com/in/musiki-sithomola-820a97359)
 
 ---
 
