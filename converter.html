@@ -9,78 +9,87 @@
 
   <body>
     <h1>Converter Hub</h1>
-    <div id="buttonDiv">
-      <button id="FileTransferBtn" onclick="fileShow()">File Transfer</button>
-      <button id="TempetatureBtn" onclick="tempShow()">Temperature</button>
-      <button id="ScientificBtn" onclick="scienShow()">Scientific</button>
-      <button id="MetricBtn" onclick="metricShow()">Metric</button>
-    </div>
-    <!-- File Transfer Section -->
-    <div id="fileTransDiv">
+
+    <!-- Navigation Buttons -->
+    <button id="FileTransferBtn">File Transfer</button>
+    <button id="TempetatureBtn">Temperature</button>
+    <button id="ScientificBtn">Scientific</button>
+    <button id="MetricBtn">Metric</button>
+
+    <!-- ========================= FILE TRANSFER ========================= -->
+    <div id="fileTransDiv" style="display:none;">
       <h2>File Transfer Calculator</h2>
+
       <label>File Size</label><br />
-      <input type="number" id="sizeCounter" value="0" min="0" step="1" />
+      <input type="number" id="sizeCounter" value="0" min="0" step="1">
       <select id="sizeBits">
         <option value="megabytes">Megabytes (MB)</option>
         <option value="gigabytes">Gigabytes (GB)</option>
         <option value="kilobytes">Kilobytes (KB)</option>
       </select>
+      <br /><br />
 
-      <br /><br /><br />
       <label>Internet Speed</label><br />
-      <input type="number" id="speedCounter" value="0" min="0" step="1" />
+      <input type="number" id="speedCounter" value="0" min="0" step="1">
       <select id="speedBits">
         <option value="megabits">Megabits/sec (Mbps)</option>
         <option value="gigabits">Gigabits/sec (Gbps)</option>
         <option value="kilobits">Kilobits/sec (Kbps)</option>
       </select>
-
-      <br /><br /><br />
-      <label>Output</label><br />
-      <input type="text" id="fileResults" readonly />
       <br /><br />
-      <br /><br /><br />
-      <button id="fileConvertBtn">Calculate</button>
+
+      <button id="fileConvertBtn">Convert</button>
+      <br /><br />
+      <input type="text" id="fileResults" readonly placeholder="Result will appear here" />
     </div>
 
-    <!-- Temperature Converter -->
+    <!-- ========================= TEMPERATURE ========================= -->
     <div id="tempDiv">
       <h2>Temperature Converter</h2>
+
       <label>Value to Convert</label><br />
-      <input type="text" id="convertNumber" />
-      <br /><br /><br />
+      <input type="text" id="convertNumber" name="convertNumber" />
+      <br /><br />
+
       <label>From</label><br />
       <select id="degree">
         <option value="celsius">Celsius (°C)</option>
         <option value="fahrenheit">Fahrenheit (°F)</option>
       </select>
-      <br /><br /><br />
-      <label>Output</label><br />
-      <input type="text" id="degreeResult" readonly />
-      <br /><br /><br />
+      <br /><br />
+
       <button id="tempConvertBtn">Convert</button>
+      <br /><br />
+
+      <label>Output</label><br />
+      <input type="text" id="degreeResult" readonly placeholder="Result will appear here" />
     </div>
 
-    <!-- Scientific Notation Converter -->
-    <div id="scientDiv">
+    <!-- ========================= SCIENTIFIC ========================= -->
+    <div id="scientDiv" style="display:none;">
       <h2>Scientific Notation Converter</h2>
+
       <label>Standard Number</label><br />
       <input type="number" id="standardNumber" value="0" min="0" step="1" />
-      <br /><br /><br />
-      <label>Output</label><br />
-      <input type="text" id="scientificOutput" readonly />
-      <br /><br /><br />
+      <br /><br />
+
       <button id="scientificConvertBtn">Convert</button>
+      <br /><br />
+
+      <label>Output</label><br />
+      <input type="text" id="scientificOutput" readonly placeholder="Result will appear here" />
     </div>
 
-    <!-- Metric Prefix Converter -->
-    <div id="metricDiv">
+    <!-- ========================= METRIC ========================= -->
+    <div id="metricDiv" style="display:none;">
       <h2>Metric Prefix Converter</h2>
-      <label>Enter Value</label><br />
-      <input type="text" id="valueNumber" />
+
+      <label>Value</label><br />
+      <input type="text" id="valueNumber" name="valueNumber" />
       <br /><br />
+
       <div id="metricValuesFlex">
-        <div>
+        <div id="fromSelect">
           <label>From</label><br />
           <select id="metricFromValues">
             <option value="giga">Giga (G)</option>
@@ -91,7 +100,7 @@
             <option value="micro">Micro (µ)</option>
           </select>
         </div>
-        <div>
+        <div id="toSelect">
           <label>To</label><br />
           <select id="metricToValues">
             <option value="giga">Giga (G)</option>
@@ -103,11 +112,11 @@
           </select>
         </div>
       </div>
-      <br /><br /><br />
-      <label>Output</label><br />
-      <input type="text" id="metricResult" readonly />
       <br /><br />
+
       <button id="metricConvertBtn">Convert</button>
+      <br /><br />
+      <input type="text" id="metricResult" readonly placeholder="Result will appear here" />
     </div>
 
     <script src="converter.js"></script>
