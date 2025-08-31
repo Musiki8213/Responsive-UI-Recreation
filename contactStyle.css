@@ -1,127 +1,173 @@
-
-body{
- 
-}
-#formDiv{
-    
-}
-#phoneImg{
-     width: 10%;
-    height: 30%;
-    padding-top: 20px;
-    
-}
-#locationImg{
-      width: 10%;
-    height: 30%;
-    padding-top: 20px;
+/* ====== Global ====== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #3d161a;
 }
 
-#emailImg{
-    
-   width: 10%;
-    height: 30%;
-    padding-top: 20px;
+/* ====== Heading ====== */
+#heading {
+  text-align: center;
+  margin: 60px 0 40px;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #d0a7a9;
 }
-#flex1{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    padding-left: 90px;
-    padding-top: 20px;
-  
-  
-}
-#heading{
-    padding-left: 640px;
-    margin-bottom: 30px;
-    margin-top: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-#phoneDiv,#emailDiv,#locationDiv{
-    width: 300px;
-    border-radius: 10px;
-    padding-top: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     background-color: rgb(247, 247, 247);
-    border-radius: 20px;box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-   height: 100px;
-   display: flex;
-   gap: 10px;
-   justify-content: center;
 
+/* ====== Layout Wrapper ====== */
+#bigDiv {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* ====== Form Styling ====== */
+form {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(183, 125, 126, 0.3);
+  max-width: 450px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #3d161a;
+}
+
+label div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  color: #c4958d;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px 10px;
+  border: 1px solid #d6d6d3;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d0a7a9;
+  box-shadow: 0 0 6px rgba(208, 167, 169, 0.4);
+}
+
+textarea {
+  resize: none;
+  min-height: 120px;
+}
+
+button {
+  display: block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #9c6c6f;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #b0757a;
+}
+
+/* ====== Contact Info Cards ====== */
+#flex1 {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+#phoneDiv,
+#emailDiv,
+#locationDiv {
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(183, 125, 126, 0.3);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 600;
+  color: #3d161a;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #phoneDiv:hover,
 #emailDiv:hover,
 #locationDiv:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-
-hr{
-    width: 50%;
-}
-h2{
-    padding-left: 640px;
-}
-form {
-  max-width: 400px;
-  padding-left: 640px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-label {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
-  font-weight: 400;
-}
-
-input,select{
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #b9b6b6;
-  border-radius: 4px;
-  width: 100%;
-}
-textarea{
-    height: 100px;
-    margin-top: 5px;
-  border: 1px solid #b9b6b6;
-  border-radius: 4px;
-}
-
-button {
-  padding: 10px 20px;
-  font-size: 20px;
+  transform: translateY(-5px);
   cursor: pointer;
-  background-color: #000000;
-  border-radius: 4px;
-  color: white;
-}
-#questionImg{
-width:4%;
+  box-shadow: 0 12px 25px rgba(183, 125, 126, 0.4);
 }
 
-#personImg{
-    width: 3%;
+/* ====== Icon Styling ====== */
+i {
+  color: #d0a7a9;   
+  font-size: 20px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-#email2Img{
-    width: 3.5%;
+
+#phoneDiv i,
+#emailDiv i,
+#locationDiv i {
+  font-size: 28px;
 }
-#phone2Img{
-    width: 3%;
+
+
+#phoneDiv:hover i,
+#emailDiv:hover i,
+#locationDiv:hover i,
+label:hover i {
+  color: #914d4f;   
+  transform: translateY(-3px);
 }
-#h1ThankyouPage{
-    text-align: center;
-}
-#dpiaImg{
-width: 20%;
-height: 20;
-}
-#bigDiv{
-    display: flex;
-    gap: 70px;
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+  #bigDiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  #phoneDiv,
+  #emailDiv,
+  #locationDiv {
+    width: 100%;
+    max-width: 350px;
+  }
 }

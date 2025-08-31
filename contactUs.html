@@ -4,82 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="contactStyle.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Contact Us</title>
   </head>
   <body>
     <h1 id="heading">Let's Get In Touch</h1>
 
-  
-   <div id="bigDiv">
-    <form action="thankyou.html" method="get">
-      <div id="formDiv">
-      <label>
-        <div>
-        <img id="personImg" src="assets/person.png" alt="person"/> Name:
-        </div>
-        <input type="text" name="name" required/>
-      </label><br><br>
-      <label>
-        <div>
-        <img id="personImg" src="assets/person.png" alt="person"/> Surname:
-        </div>
-        <input type="text" name="surname" required/>
-      </label><br><br>
-      <label>
-        <div>
-       <img id="email2Img" src="assets/email.jpg" alt="email"/> Email:
-       </div>
-        <input type="email" name="email" required/>
-      </label><br><br>
+    <div id="bigDiv">
+      <!-- Contact Form -->
+      <form action="thankyou.html" method="get">
+        <div id="formDiv">
+          <label>
+            <div>
+              <i class="fa-solid fa-user"></i> Name:
+            </div>
+            <input type="text" name="name" required />
+          </label>
 
-      <label>
-        <div>
-        <img id="phone2Img" src="assets/call.webp" alt="call"/> Phone Number:
-        </div>
-        <input type="tel" name="phone"/>
-      </label><br><br>
+          <label>
+            <div>
+              <i class="fa-solid fa-user-tag"></i> Surname:
+            </div>
+            <input type="text" name="surname" required />
+          </label>
 
-      <label for="query-type">
-        <div>
-        <img id="questionImg" src="assets/query.jpg" alt="query"/> Select your query type:
-        </div>
-    </label>
-      <select id="query-type" name="query-type" required>
-        <option value="" disabled selected>-- Choose an option --</option>
-        <option value="general">💬 General Question</option>
-        <option value="feedback">🗣️ Feedback</option>
-        <option value="bug">🐞 Bug Report</option>
-        <option value="info-request">📄 Request for Information</option>
-        <option value="tech-support">🛠️ Technical Support</option>
-        <option value="other">🔍 Other</option>
-      </select><br><br>
+          <label>
+            <div>
+              <i class="fa-solid fa-envelope"></i> Email:
+            </div>
+            <input type="email" name="email" required />
+          </label>
 
-      <label>
-        📝 Query Message:
-        <textarea name="feedback" required></textarea>
-      </label><br><br>
+          <label>
+            <div>
+              <i class="fa-solid fa-phone"></i> Phone Number:
+            </div>
+            <input type="tel" name="phone" />
+          </label>
 
-      <button type="submit">🚀 Submit</button>
-      </div>
-    </form>
-    
-    <div id="flex1">
-      <div id="phoneDiv">
-        <img id="phoneImg" src="assets/call.webp" alt="phone" />
-      
-        <p>Call Us<br>+123 45 789 000</p>
-      </div>
-      <div id="emailDiv">
-        <img id="emailImg" src="assets/email.jpg" alt="email" />
-        
-        <p>Email Us<br>musiki@gmail.com</p>
-      </div>
-      <div id="locationDiv">
-        <img id="locationImg" src="assets/location.png" alt="location" />
-        <p>Address <br> 221b Elementary Street<br>Cape Town</p>
-       
-      </div>
+          <label for="query-type">
+            <div>
+              <i class="fa-solid fa-question-circle"></i> Select your query type:
+            </div>
+          </label>
+          <select id="query-type" name="query-type" required>
+            <option value="" disabled selected>-- Choose an option --</option>
+            <option value="general">💬 General Question</option>
+            <option value="feedback">🗣️ Feedback</option>
+            <option value="bug">🐞 Bug Report</option>
+            <option value="info-request">📄 Request for Information</option>
+            <option value="tech-support">🛠️ Technical Support</option>
+            <option value="other">🔍 Other</option>
+          </select>
+
+          <label>
+            <div>
+              <i class="fa-solid fa-pen-to-square"></i> Query Message:
+            </div>
+            <textarea name="feedback" required></textarea>
+          </label>
+
+          <button type="submit">🚀 Submit</button>
         </div>
+      </form>
+
+      <!-- Contact Info Cards -->
+      <div id="flex1">
+        <div id="phoneDiv">
+          <i class="fa-solid fa-phone"></i>
+          <p>Call Us<br />+123 45 789 000</p>
         </div>
+
+        <div id="emailDiv">
+          <i class="fa-solid fa-envelope"></i>
+          <p>Email Us<br />musiki@gmail.com</p>
+        </div>
+
+        <div id="locationDiv">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Address <br />221b Elementary Street<br />Cape Town</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
